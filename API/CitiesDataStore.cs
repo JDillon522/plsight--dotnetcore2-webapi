@@ -16,13 +16,43 @@ namespace API
                 {
                     Id = 1,
                     Name = "NYC",
-                    Description = "blagh blach"
+                    Description = "blagh blach",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 1,
+                            Name = "A pile of garbage",
+                            Description = "the most hiked"
+                        },
+                        new PointOfInterestDto()
+                        {
+                            Id = 2,
+                            Name = "The mayors office",
+                            Description = "Yummm"
+                        }
+                    }
                 },
                 new CityDto()
                 {
                     Id = 2,
                     Name = "Anchorage",
-                    Description = "My home"
+                    Description = "My home",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                            Id = 3,
+                            Name = "Flatop",
+                            Description = "the most hiked"
+                        },
+                        new PointOfInterestDto()
+                        {
+                            Id = 4,
+                            Name = "Chick Fil A",
+                            Description = "Yummm"
+                        }
+                    }
                 }
             };
         }
