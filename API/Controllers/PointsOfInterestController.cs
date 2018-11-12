@@ -12,11 +12,16 @@ namespace API.Controllers
     [Route("api/cities")]
     public class PointsOfInterestController : Controller
     {
-
+        // private CityInfoContext _ctx;
         private ILogger<PointsOfInterestController> _logger;
         private IMailService _mailService;
-        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, IMailService mailService)
+        public PointsOfInterestController(
+            // CityInfoContext ctx,
+            ILogger<PointsOfInterestController> logger,
+            IMailService mailService
+        )
         {
+            // _ctx = ctx;
             _logger = logger;
             _mailService = mailService;
         }
