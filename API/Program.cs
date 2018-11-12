@@ -39,6 +39,7 @@ namespace API
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();

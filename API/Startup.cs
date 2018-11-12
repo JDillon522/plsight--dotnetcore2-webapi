@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
@@ -15,6 +17,12 @@ namespace API
 {
     public class Startup
     {
+        public static IConfiguration Configuration;
+
+        public Startup(IConfiguration configuration) {
+            Configuration = configuration;
+        }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -31,6 +39,14 @@ namespace API
             //         castResolver.NamingStrategy = null;
             //     }
             // });
+// These are compiler conditionals
+#if DEBUG
+                services.AddTransient<IMailService, LocalMailService>();
+#else
+                services.AddTransient<IMailService, CloudMailService>();
+#endif
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +63,16 @@ namespace API
             }
             else
             {
-                app.UseExceptionHandler();
+                app.UseExceptionHandler(
+                    new ExceptionHandlerOptions
+                    {
+                        ExceptionHandler = async context =>
+                        {
+                            context.Response.ContentType = "text/plain";
+                            await context.Response.WriteAsync( "Welcome to the error page." );
+                        }
+                    }
+                );
             }
 
             // app.UseStatusCodePages();

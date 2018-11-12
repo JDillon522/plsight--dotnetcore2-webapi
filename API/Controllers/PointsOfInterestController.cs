@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using API.Models;
+using API.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,9 +14,11 @@ namespace API.Controllers
     {
 
         private ILogger<PointsOfInterestController> _logger;
-        public PointsOfInterestController(ILogger<PointsOfInterestController> logger)
+        private IMailService _mailService;
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, IMailService mailService)
         {
             _logger = logger;
+            _mailService = mailService;
         }
 
         [HttpGet("{cityId}/points")]
@@ -23,20 +26,19 @@ namespace API.Controllers
         {
             try
             {
-                // CityDto city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                CityDto city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
 
-                // if (city == null) {
-                    _logger.LogCritical("TEST CRITICAL ERR");
+                if (city == null) {
                     _logger.LogInformation($"City with id {cityId} was not found");
                     return NotFound();
-                // }
+                }
 
-                // return Ok(city.PointsOfInterest);
+                return Ok(city.PointsOfInterest);
 
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"EXCEPTION getting points for city with id {cityId}");
+                _logger.LogCritical($"EXCEPTION getting points for city with id {cityId}", ex);
                 return StatusCode(500, "Uber problem");
             }
         }
@@ -169,6 +171,7 @@ namespace API.Controllers
             }
 
             city.PointsOfInterest.Remove(point);
+            _mailService.Send($"Delete Point {id}", $"Deleted point \"{point.Name}\" with id {point.Id}");
             return NoContent();
         }
     }
