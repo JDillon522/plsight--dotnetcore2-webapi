@@ -26,5 +26,8 @@ namespace API.Controllers
             }
 
         }
+
+        // [HttpPost("")]
+        // public IActionResult CreatePoint()
     }
 }

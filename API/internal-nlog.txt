@@ -1,0 +1,60 @@
+2018-11-11 20:43:27.1589 Info Message Template Auto Format enabled
+2018-11-11 20:43:27.1784 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:43:27.2745 Info Adding target File Target[allfile]
+2018-11-11 20:43:27.2943 Info Adding target File Target[ownFile-web]
+2018-11-11 20:43:27.3043 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:43:27.3264 Info Found 45 configuration items
+2018-11-11 20:45:48.2621 Info Message Template Auto Format enabled
+2018-11-11 20:45:48.2787 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:45:48.4203 Info Adding target File Target[allfile]
+2018-11-11 20:45:48.4457 Info Adding target File Target[ownFile-web]
+2018-11-11 20:45:48.4715 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:45:48.5134 Info Found 45 configuration items
+2018-11-11 20:49:44.8843 Info Message Template Auto Format enabled
+2018-11-11 20:49:44.9128 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:49:45.0398 Info Adding target File Target[allfile]
+2018-11-11 20:49:45.0529 Info Adding target File Target[ownFile-web]
+2018-11-11 20:49:45.0529 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:49:45.0821 Info Found 41 configuration items
+2018-11-11 20:55:58.9726 Info Message Template Auto Format enabled
+2018-11-11 20:55:59.0116 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:55:59.1661 Info Adding target File Target[allfile]
+2018-11-11 20:55:59.1912 Info Adding target File Target[ownFile-web]
+2018-11-11 20:55:59.2105 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:55:59.2525 Info Found 41 configuration items
+2018-11-11 20:56:46.6318 Info Message Template Auto Format enabled
+2018-11-11 20:56:46.6488 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:56:46.7444 Info Adding target File Target[allfile]
+2018-11-11 20:56:46.7645 Info Adding target File Target[ownFile-web]
+2018-11-11 20:56:46.7767 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:56:46.8025 Info Found 41 configuration items
+2018-11-11 20:56:51.7411 Info Message Template Auto Format enabled
+2018-11-11 20:56:51.7562 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-11 20:56:51.8412 Info Adding target File Target[allfile]
+2018-11-11 20:56:51.8590 Info Adding target File Target[ownFile-web]
+2018-11-11 20:56:51.8730 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-11 20:56:51.9119 Info Found 41 configuration items
+2018-11-12 07:59:04.2358 Info Message Template Auto Format enabled
+2018-11-12 07:59:04.2463 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-12 07:59:04.3168 Info Adding target File Target[allfile]
+2018-11-12 07:59:04.3316 Info Adding target File Target[ownFile-web]
+2018-11-12 07:59:04.3409 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-12 07:59:04.3595 Info Found 41 configuration items
+2018-11-12 08:02:48.5192 Info Message Template Auto Format enabled
+2018-11-12 08:02:48.5300 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-12 08:02:48.6023 Info Adding target File Target[allfile]
+2018-11-12 08:02:48.6201 Info Adding target File Target[ownFile-web]
+2018-11-12 08:02:48.6307 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-12 08:02:48.6490 Info Found 41 configuration items
+2018-11-12 08:05:15.1351 Info Message Template Auto Format enabled
+2018-11-12 08:05:15.1523 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-12 08:05:15.3148 Info Adding target File Target[allfile]
+2018-11-12 08:05:15.3148 Info Adding target File Target[ownFile-web]
+2018-11-12 08:05:15.3445 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-12 08:05:15.3657 Info Found 41 configuration items
+2018-11-12 08:07:28.1647 Info Message Template Auto Format enabled
+2018-11-12 08:07:28.1740 Info Loading assembly: NLog.Web.AspNetCore
+2018-11-12 08:07:28.2428 Info Adding target File Target[allfile]
+2018-11-12 08:07:28.2581 Info Adding target File Target[ownFile-web]
+2018-11-12 08:07:28.2675 Info Configured from an XML element in C:\Users\c010079\Documents\Training\dotNetCore\plsight_first_api_dotnetcore\WebAPI\API\bin\Debug\netcoreapp2.1\./nlog.config...
+2018-11-12 08:07:28.2855 Info Found 45 configuration items

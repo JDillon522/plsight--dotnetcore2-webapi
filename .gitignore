@@ -32,3 +32,9 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+
+# Logs
+*/logs/*
+
+# Client Side Dev
+node_modules
