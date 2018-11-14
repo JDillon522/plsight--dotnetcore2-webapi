@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Entities;
+using API.Models;
 using API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -50,6 +51,7 @@ namespace API
 
             string connectionString = Startup.Configuration["connectionStrings:cityInfoContextLocalDb"];
             services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>(); // Add repo to services
 
         }
 
@@ -79,6 +81,17 @@ namespace API
                 );
             }
 
+            // Map entities to Dtos
+            AutoMapper.Mapper.Initialize(config =>
+            {
+                config.CreateMap<City, CityWithoutPointsDto>();
+                config.CreateMap<City, CityDto>();
+                config.CreateMap<Point, PointOfInterestDto>();
+                config.CreateMap<PointOfInterestForCreationDto, Point>();
+                config.CreateMap<PointOfInterestForUpdateDto, Point>();
+                config.CreateMap<Point, PointOfInterestForUpdateDto>();
+                config.CreateMap<CityForCreationDto, City>();
+            });
             // app.UseStatusCodePages();
             app.UseMvc();
         }
